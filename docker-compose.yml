@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  app:
+    container_name: vue-xzdwq
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 80:4444
+    environment:
+      PORT: 4444
+    stdin_open: true
+    tty: true
