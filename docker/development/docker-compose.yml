@@ -3,15 +3,15 @@ services:
   app:
     container_name: vue-xzdwq-dev
     build:
-      context: .
-      dockerfile: Dockerfile.dev
+      context: ../../
+      dockerfile: docker/development/Dockerfile
     command: npm run dev
     restart: always
     ports:
       - 80:4444
       - '8081:8081'
     volumes:
-      - .:/app
+      - ../../:/app
       - nodemodules:/app/node_modules
     stdin_open: true
     tty: true

@@ -3,8 +3,8 @@ services:
   app:
     container_name: vue-xzdwq
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ../../
+      dockerfile: docker/production/Dockerfile
     ports:
       - 80:4444
     environment:
