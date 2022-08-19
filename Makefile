@@ -1,5 +1,5 @@
 build:
-  docker build -t vue-xzdwq:latest .
+  docker build -f docker/production/Dockerfile -t vue-xzdwq:latest .
 run:
   docker run -d -p 80:4444 --rm --name vue-xzdwq vue-xzdwq:latest
 run-dev:

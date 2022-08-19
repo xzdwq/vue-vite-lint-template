@@ -12,9 +12,9 @@
 
 Docker использует nginx, поэтому если необходимо изменить порт который будет слушать Docker в nginx, то:
 
-- Необходимо поправить порт в `nginx.conf` (`server.listen <port>`) на необходимый;
-- Поправить порт в `Dockerfile` (`ENV PORT <port>`) на необходимый;
-- Поправить порт в `docker-compose.yml` на необходимый;
+- Необходимо поправить порт в `docker/production/nginx.conf` (`server.listen <port>`) на необходимый;
+- Поправить порт в `docker/production/Dockerfile` (`ENV PORT <port>`) на необходимый;
+- Поправить порт в `docker/production/docker-compose.yml` на необходимый;
 
 #### Docker compose dev (hot reload)
 

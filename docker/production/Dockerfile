@@ -15,7 +15,7 @@ RUN npm run build
 FROM nginx:stable-alpine as production-stage
 
 COPY --from=build-stage /app/dist /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/
+COPY docker/production/nginx.conf /etc/nginx/
 
 ENV PORT 4444
 

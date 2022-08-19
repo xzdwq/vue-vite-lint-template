@@ -4,6 +4,7 @@ dist
 
 docker/**/*
 docker
+!docker/production/nginx.conf
 .dockerignore
 
 .git
