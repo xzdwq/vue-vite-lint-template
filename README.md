@@ -12,6 +12,10 @@
 - `git clone <url> -b <branch-name>`
 - `npm i && npm run prepare`
 
+### Запуск
+
+- `npm run dev` (`http://localhost:4444`)
+
 ### Docker
 
 Docker использует nginx, поэтому если необходимо изменить порт который будет слушать Docker в nginx, то:
@@ -22,7 +26,7 @@ Docker использует nginx, поэтому если необходимо 
 
 #### Docker compose dev (hot reload)
 
-- `docker-compose -f docker/development/docker-compose.yml up --build` - старт (`http://localhost:80`)
+- `docker-compose -f docker/development/docker-compose.yml up --build` - старт (`http://localhost:4445`)
 - `docker-compose -f docker/development/docker-compose.yml down` - стоп
 
 #### Docker compose

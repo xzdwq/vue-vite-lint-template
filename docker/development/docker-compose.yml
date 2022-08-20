@@ -8,8 +8,8 @@ services:
     command: npm run dev
     restart: always
     ports:
-      - 80:4444
-      - '8081:8081'
+      - 4445:4444
+      - 8081:8081
     volumes:
       - ../../:/app
       - nodemodules:/app/node_modules

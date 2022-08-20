@@ -9,6 +9,6 @@ RUN npm install
 
 COPY . .
 
-EXPOSE 4444/tcp
+EXPOSE 4445/tcp
 
 CMD ["npm", "run", "dev"]
