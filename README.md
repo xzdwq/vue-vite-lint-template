@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="git-assets/preview.png">
+</p>
+
 ### Требования
 
 - `npm i -g husky`
