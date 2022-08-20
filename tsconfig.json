@@ -17,6 +17,14 @@
     "sourceMap": true,
     "isolatedModules": true,
     "types": ["vitest", "vite/client", "vue/ref-macros"],
+    "plugins": [
+      {
+        "name": "@twind/typescript-plugin",
+        "tags": ["tw", "cx"],
+        "attributes": ["tw"],
+        "debug": true
+      }
+    ],
     "paths": {
       "~/*": ["src/*"]
     }
