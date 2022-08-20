@@ -1,2 +1,4 @@
 # Ignore built files
 dist/*
+
+src/styles/twind.config.ts

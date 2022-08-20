@@ -1,0 +1,15 @@
+@font-face {
+  font-weight: 400;
+  font-family: 'Material Icons';
+  font-style: normal;
+  src: url('./material-icons.woff2') format('woff2');
+  font-display: block;
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Material Icons Outline';
+  font-style: normal;
+  src: url('./material-icons-outline.woff2') format('woff2');
+  font-display: block;
+}
