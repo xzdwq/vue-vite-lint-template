@@ -1,4 +1,5 @@
 import * as twindColors from 'twind/colors';
+import '~/styles/variables.scss';
 
 /**
  * Font Family
@@ -34,7 +35,7 @@ export const animation = {
 export const keyframes = {
   'scale-pulse': {
     '0%': { transform: 'scale(1) rotate(0deg)' },
-    '50%': { transform: 'scale(0) rotate(30deg)' },
+    '50%': { transform: 'scale(0.2) rotate(30deg)' },
     '100%': { transform: 'scale(1) rotate(0deg)' },
   },
 };

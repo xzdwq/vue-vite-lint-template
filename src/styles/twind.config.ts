@@ -8,14 +8,12 @@ import '~/assets/fonts/benzin/stylesheet.css';
 import '~/assets/fonts/montserrat/stylesheet.css';
 import '~/assets/fonts/segoe-ui/stylesheet.css';
 import '~/assets/icons/material/stylesheet.css';
-import '~/styles/variables.css';
 
 import { loadMode } from '~/styles/mode';
 
 /** @type {import('twind').Configuration} */
 setup({
   mode: strict,
-  // hash: (value) => 'tw-'+value,
   darkMode: 'class',
   theme: {
     extend: {
@@ -24,7 +22,7 @@ setup({
       keyframes,
       animation,
       outline: (theme) => ({
-        'btn': [`2px solid ${theme('colors.gray.300')}`, '2px'],
+        'btn': [`2px solid ${theme('colors.quaternary')}`, '2px'],
       }),
     },
   },
