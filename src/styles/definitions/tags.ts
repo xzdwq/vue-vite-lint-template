@@ -4,7 +4,7 @@ import { apply } from 'twind/shim';
 /**
  * HTML
  */
-export const html = apply('h-screen font-base');
+export const html = apply('h-full w-full font-base');
 
 /**
  * Body

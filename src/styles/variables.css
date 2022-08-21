@@ -1,0 +1,15 @@
+.light {
+  --primary: #FFF;
+  --secondary: #F1F5F9;
+  --tertiary: #475569;
+  --quaternary: #1E293B;
+  --other: #E11D48;
+}
+
+.dark {
+  --primary: #0F172A;
+  --secondary: #1E293B;
+  --tertiary: #CBD5E1;
+  --quaternary: #FFF;
+  --other: #2563EB;
+}
