@@ -12,14 +12,14 @@
       <i :data-icon="icon" :class="scalePulse" />
       Button
     </button> -->
-    <button class="bg-secondary text-tertiary" @click="toggleTheme">
+    <button class="bg-tertiary text-secondary" @click="toggleTheme">
       <i :data-icon="icon" :class="scalePulse" />
       Button
     </button>
   </div>
   <div class="flex justify-center items-center h-full">
     <div class="children:(my-2)">
-      <div class="border(2 solid tertiary) text(tertiary [25px] hover:(rose-200)) duration-300 cursor-pointer p-2">
+      <div class="border(2 solid tertiary) text(tertiary [25px] hover:(lime-500 dark:rose-200)) duration-300 cursor-pointer p-2">
         <div class="font(segoe-ui light)">Segoe UI light: VUE VITE TS Проверка шрифта</div>
         <div class="font-segoe-ui">Segoe UI: VUE VITE TS Проверка шрифта</div>
         <div class="font-segoe-ui italic">Segoe UI italic: VUE VITE TS Проверка шрифта</div>

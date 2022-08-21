@@ -33,8 +33,8 @@ export const animation = {
 
 export const keyframes = {
   'scale-pulse': {
-    '0%': { transform: 'scale(1)' },
-    '50%': { transform: 'scale(0)' },
-    '100%': { transform: 'scale(1)' },
+    '0%': { transform: 'scale(1) rotate(0deg)' },
+    '50%': { transform: 'scale(0) rotate(30deg)' },
+    '100%': { transform: 'scale(1) rotate(0deg)' },
   },
 };
