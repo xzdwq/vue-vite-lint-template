@@ -2,7 +2,7 @@ import { apply, setup, strict } from 'twind/shim';
 
 import { plugins } from '~/styles/definitions/plugins';
 import { body, button, html, i } from '~/styles/definitions/tags';
-import { animation, colors, fontFamily, keyframes } from '~/styles/definitions/theme';
+import { animate, colors, fontFamily } from '~/styles/definitions/theme';
 
 import '~/assets/fonts/benzin/stylesheet.css';
 import '~/assets/fonts/montserrat/stylesheet.css';
@@ -19,8 +19,8 @@ setup({
     extend: {
       colors,
       fontFamily,
-      keyframes,
-      animation,
+      animation: animate.animation,
+      keyframes: animate.keyframes,
       outline: (theme) => ({
         'btn': [`2px solid ${theme('colors.quaternary')}`, '2px'],
       }),
@@ -31,7 +31,7 @@ setup({
     body,
     button,
     i,
-    '[id=app]': apply('h-full relative'),
+    '[id=app]': apply('h-full bg-secondary'),
   }),
   plugins,
 });

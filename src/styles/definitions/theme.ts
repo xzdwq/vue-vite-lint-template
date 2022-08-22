@@ -1,5 +1,5 @@
 import * as twindColors from 'twind/colors';
-import '~/styles/variables.scss';
+import '~/styles/palette.scss';
 
 /**
  * Font Family
@@ -19,23 +19,24 @@ export const fontFamily = {
 export const colors = {
   ...twindColors,
   primary: 'var(--primary)',
+  accent: 'var(--accent)',
   secondary: 'var(--secondary)',
   tertiary: 'var(--tertiary)',
   quaternary: 'var(--quaternary)',
-  other: 'var(--other)',
 };
 
 /**
- * Animate, keyframes
+ * Animate. Keyframes
  */
-export const animation = {
-  'scale-pulse': 'scale-pulse .3s cubic-bezier(0.4, 0.0, 0.2, 1)',
-};
-
-export const keyframes = {
-  'scale-pulse': {
-    '0%': { transform: 'scale(1) rotate(0deg)' },
-    '50%': { transform: 'scale(0.2) rotate(30deg)' },
-    '100%': { transform: 'scale(1) rotate(0deg)' },
+export const animate = {
+  animation: {
+    'scale-pulse': 'scale-pulse .3s cubic-bezier(0.4, 0.0, 0.2, 1)',
+  },
+  keyframes: {
+    'scale-pulse': {
+      '0%': { transform: 'scale(1) rotate(0deg)' },
+      '50%': { transform: 'scale(0.2) rotate(30deg)' },
+      '100%': { transform: 'scale(1) rotate(0deg)' },
+    },
   },
 };

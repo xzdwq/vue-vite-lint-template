@@ -1,6 +1,6 @@
 import { tw } from 'twind';
 import { createApp } from 'vue';
-import App from '~/App.vue';
+import App from '~/app.vue';
 
 import '~/styles/twind.config';
 

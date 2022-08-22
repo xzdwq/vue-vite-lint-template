@@ -1,0 +1,17 @@
+/* Default. Light theme colors */
+:root {
+  --primary: #FFF;
+  --accent: #dce4ea;
+  --secondary: #F1F5F9;
+  --tertiary: #58677d;
+  --quaternary: #18212f;
+}
+
+/* Dark theme colors */
+.dark {
+  --primary: #1b253b;
+  --accent: #1b2334;
+  --secondary: #1E293B;
+  --tertiary: #b7c0ca;
+  --quaternary: #FFF;
+}
