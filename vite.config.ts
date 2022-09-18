@@ -1,3 +1,4 @@
+import { quasar, transformAssetUrls } from '@quasar/vite-plugin';
 import vue from '@vitejs/plugin-vue';
 import path from 'node:path';
 import { defineConfig } from 'vite';
@@ -19,6 +20,10 @@ export default defineConfig({
     vue({
       include: [/\.vue$/],
       reactivityTransform: true,
+      template: { transformAssetUrls },
+    }),
+    quasar({
+      sassVariables: 'src/styles/quasar/variables.sass',
     }),
   ],
 });

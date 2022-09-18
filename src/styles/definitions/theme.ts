@@ -5,7 +5,7 @@ import '~/styles/palette.scss';
  * Font Family
  */
 export const fontFamily = {
-  base: 'Segoe UI, Montserrat, sans-serif, -apple-system, Arial',
+  base: 'Montserrat, Segoe UI, sans-serif, -apple-system, Arial',
   'segoe-ui': 'Segoe UI',
   montserrat: 'Montserrat',
   benzin: 'Benzin',

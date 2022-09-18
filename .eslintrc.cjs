@@ -47,7 +47,7 @@ module.exports = {
     'no-dupe-else-if': 'error',
     'no-constant-condition': 'error',
     'new-parens': ['error', 'always'],
-    'max-lines-per-function': ['error', 200],
+    'max-lines-per-function': ['error', 300],
     'eol-last': ['error', 'always'],
     '@typescript-eslint/promise-function-async': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',

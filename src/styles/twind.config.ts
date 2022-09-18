@@ -1,4 +1,4 @@
-import { apply, setup, strict } from 'twind/shim';
+import { apply, setup, silent, strict } from 'twind/shim';
 
 import { plugins } from '~/styles/definitions/plugins';
 import { body, button, html, i } from '~/styles/definitions/tags';
@@ -13,7 +13,7 @@ import { loadMode } from '~/styles/mode';
 
 /** @type {import('twind').Configuration} */
 setup({
-  mode: strict,
+  mode: silent ?? strict,
   darkMode: 'class',
   theme: {
     extend: {
