@@ -11,7 +11,7 @@
     "lint-fix": "eslint \"./**/*.{js,ts,vue}\" --fix",
     "prettier-check": "npx prettier --check .",
     "prettier-fix": "npx prettier --write .",
-    "stylelint-check": "npx stylelint \"**/*.{css,scss,vue}\"",
+    "stylelint-check": "npx stylelint \"./**/*.{css,scss,vue}\"",
     "stylelint-fix": "npx stylelint \"**/*.{css,scss,vue}\" --fix",
     "prepare": "husky install"
   },

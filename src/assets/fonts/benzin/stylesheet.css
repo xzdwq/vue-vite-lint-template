@@ -1,39 +1,34 @@
 @font-face {
   font-family: Benzin;
-  src: local('Benzin-Regular'),
-    url('Benzin-Regular.woff') format('woff');
+  src: local('Benzin-Regular'), url('Benzin-Regular.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: Benzin;
-  src: local('Benzin-Bold'),
-    url('Benzin-Bold.woff') format('woff');
+  src: local('Benzin-Bold'), url('Benzin-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: Benzin;
-  src: local('Benzin-Semibold'),
-    url('Benzin-Semibold.woff') format('woff');
+  src: local('Benzin-Semibold'), url('Benzin-Semibold.woff') format('woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: Benzin;
-  src: local('Benzin-ExtraBold'),
-    url('Benzin-Extra-Bold.woff') format('woff');
+  src: local('Benzin-ExtraBold'), url('Benzin-Extra-Bold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: Benzin;
-  src: local('Benzin-Medium'),
-    url('Benzin-Medium.woff') format('woff');
+  src: local('Benzin-Medium'), url('Benzin-Medium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

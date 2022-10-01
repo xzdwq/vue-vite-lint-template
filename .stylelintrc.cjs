@@ -3,10 +3,11 @@ module.exports = {
     'stylelint-config-standard',
     'stylelint-config-standard-scss',
     'stylelint-config-prettier-scss',
-		'stylelint-config-html',
+    'stylelint-config-html',
     'stylelint-config-recommended-vue',
     'stylelint-config-recommended-vue/scss',
   ],
+  plugins: ['stylelint-scss'],
   rules: {
     indentation: [
       2,
@@ -29,6 +30,12 @@ module.exports = {
     'no-duplicate-selectors': null,
     'no-empty-source': null,
     'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['global'] }],
+    'at-rule-no-unknown': null,
+    'scss/at-rule-no-unknown': true,
+    'no-empty-source': true,
+    'rule-empty-line-before': 'never',
+    'block-no-empty': true,
+    'block-closing-brace-empty-line-before': 'never',
   },
   overrides: [
     {

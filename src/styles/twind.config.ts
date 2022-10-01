@@ -22,7 +22,7 @@ setup({
       animation: animate.animation,
       keyframes: animate.keyframes,
       outline: (theme) => ({
-        'btn': [`2px solid ${theme('colors.quaternary')}`, '2px'],
+        btn: [`2px solid ${theme('colors.quaternary')}`, '2px'],
       }),
     },
   },

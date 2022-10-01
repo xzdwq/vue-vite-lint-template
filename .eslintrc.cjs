@@ -53,6 +53,12 @@ module.exports = {
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/no-unused-vars': 1,
     'vue/require-default-prop': 1,
+    'vue/html-indent': [2, 2, {
+      baseIndent: 0,
+    }],
+    'vue/script-indent': ['error', 2, {
+      baseIndent: 0,
+    }],
     'space-before-function-paren': ['error', 'never'],
     '@typescript-eslint/naming-convention': [
       'error',
@@ -83,7 +89,10 @@ module.exports = {
           Boolean: { message: 'Use boolean instead', fixWith: 'boolean' },
           Number: { message: 'Use number instead', fixWith: 'number' },
           String: { message: 'Use string instead', fixWith: 'string' },
-          Object: { message: 'Use Record<string, unknown> instead', fixWith: 'Record<string, unknown>' },
+          Object: {
+            message: 'Use Record<string, unknown> instead',
+            fixWith: 'Record<string, unknown>',
+          },
           Symbol: { message: 'Use symbol instead', fixWith: 'symbol' },
         },
       },

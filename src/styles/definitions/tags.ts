@@ -14,7 +14,9 @@ export const body = apply('m-0 relative h-full');
 /**
  * Button
  */
-export const button = apply('border-none m-0 p-0 decoration-0 cursor-pointer font-base rounded inline-flex items-center text-base focus:outline-btn');
+export const button = apply(
+  'border-none m-0 p-0 decoration-0 cursor-pointer font-base rounded inline-flex items-center text-base focus:outline-btn',
+);
 
 /**
  * I

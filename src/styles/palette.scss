@@ -1,25 +1,25 @@
 /* Default. Light theme colors */
 :root {
-  --primary: #FFF;
+  --primary: #fff;
   --accent: #dce4ea;
-  --secondary: #F1F5F9;
+  --secondary: #f1f5f9;
   --tertiary: #58677d;
   --quaternary: #18212f;
-  --positive  : #21BA45;
-  --negative  : #C10015;
-  --info      : #31CCEC;
-  --warning   : #F2C037;
+  --positive: #21ba45;
+  --negative: #c10015;
+  --info: #31ccec;
+  --warning: #f2c037;
 }
 
 /* Dark theme colors */
 .dark {
   --primary: #1b253b;
   --accent: #1b2334;
-  --secondary: #1E293B;
+  --secondary: #1e293b;
   --tertiary: #b7c0ca;
-  --quaternary: #FFF;
-  --positive  : #21BA45;
-  --negative  : #C10015;
-  --info      : #31CCEC;
-  --warning   : #F2C037;
+  --quaternary: #fff;
+  --positive: #21ba45;
+  --negative: #c10015;
+  --info: #31ccec;
+  --warning: #f2c037;
 }
