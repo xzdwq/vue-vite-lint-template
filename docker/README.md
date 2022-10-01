@@ -1,3 +1,5 @@
+#### Из корня приложения
+
 #### Docker build
 
 - `docker build -f docker/production/Dockerfile -t vue-xzdwq:latest .`
