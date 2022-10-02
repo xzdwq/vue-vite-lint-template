@@ -57,7 +57,7 @@ module.exports = {
       2,
       2,
       {
-        baseIndent: 0,
+        baseIndent: 1,
       },
     ],
     'vue/script-indent': [

@@ -2,3 +2,4 @@
 dist/*
 
 src/styles/twind.config.ts
+*.d.ts

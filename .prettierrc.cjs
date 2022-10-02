@@ -1,4 +1,5 @@
 module.exports = {
+  vueIndentScriptAndStyle: false,
   htmlWhitespaceSensitivity: 'ignore',
   trailingComma: 'all',
   semi: true,
