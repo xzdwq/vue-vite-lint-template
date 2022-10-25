@@ -1,5 +1,5 @@
-import { css } from 'twind/css';
 import { apply } from 'twind/shim';
+import { css } from 'twind/css';
 
 /**
  * HTML

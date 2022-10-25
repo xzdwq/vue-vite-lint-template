@@ -34,7 +34,7 @@ export default defineConfig({
       dts: 'src/components.d.ts',
     }),
     AutoImport({
-      imports: ['vue', 'vue-router', 'vue-i18n'],
+      imports: ['vue', 'vue-router', 'vue-i18n', '@vueuse/core'],
       dts: 'src/auto-imports.d.ts',
       dirs: ['src/**/*'],
       resolvers: [ElementPlusResolver()],
