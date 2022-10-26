@@ -14,7 +14,7 @@
 <script setup lang="ts">
 import { IThemeList } from '~/types/theme';
 
-const mode = useColorMode({
+const mode = useColorMode<string>({
   emitAuto: true,
   storageKey: 'theme',
   modes: {
