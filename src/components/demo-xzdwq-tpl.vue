@@ -1,8 +1,6 @@
 <template>
   <div>
-    <div class="flex justify-center items-center pt-4 font(base semibold) text(lg tertiary)">
-      Vue 3 Vite TS Twind
-    </div>
+    <div class="flex justify-center items-center pt-4 font(base semibold) text(lg tertiary)">Vue 3 Vite TS Twind</div>
     <div class="flex justify-center items-center pt-4 font(base semibold) text(lg tertiary)">
       <q-btn color="primary" text-color="tertiary" label="Add data" icon="add" />
       <i data-icon="settings" />

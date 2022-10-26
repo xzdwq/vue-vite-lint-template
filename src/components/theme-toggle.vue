@@ -1,13 +1,7 @@
 <template>
   <q-btn-dropdown stretch flat split :icon="icon" class="min" @click="next()">
     <q-list class="min">
-      <q-item
-        v-for="item in themeList"
-        :key="item.className"
-        v-close-popup
-        clickable
-        @click="mode = item.className"
-      >
+      <q-item v-for="item in themeList" :key="item.className" v-close-popup clickable @click="mode = item.className">
         <q-item-section avatar>
           <q-avatar :icon="item.icon" />
         </q-item-section>
@@ -51,7 +45,10 @@ const themeList: IThemeList[] = [
   },
 ];
 
-const { next } = useCycleList(themeList.map((i: IThemeList) => i.className), { initialValue: mode });
+const { next } = useCycleList(
+  themeList.map((i: IThemeList) => i.className),
+  { initialValue: mode },
+);
 
 const icon = computed<string>(() => themeList.find((i) => i.className === mode.value)?.icon ?? 'auto_fix_hight');
 </script>
