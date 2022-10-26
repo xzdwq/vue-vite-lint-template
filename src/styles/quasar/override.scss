@@ -1,0 +1,12 @@
+.min {
+  .q-btn {
+    padding: 1px;
+    min-height: 0;
+  }
+}
+.q-menu {
+  background-color: var(--primary);
+  .q-list {
+    background-color: var(--primary);
+  }
+}

@@ -1,5 +1,6 @@
-import * as twindColors from 'twind/colors';
 import '~/styles/palette.scss';
+
+import * as twindColors from 'twind/colors';
 
 /**
  * Font Family
@@ -9,6 +10,7 @@ export const fontFamily = {
   'segoe-ui': 'Segoe UI',
   montserrat: 'Montserrat',
   benzin: 'Benzin',
+  // https://marella.me/material-icons/demo/
   material: 'Material Icons Outline',
   'material-filled': 'Material Icons',
 };

@@ -1,5 +1,5 @@
 /* Light theme colors */
-.light {
+:root {
   --primary: #fff;
   --accent: #dce4ea;
   --secondary: #f1f5f9;
@@ -26,10 +26,10 @@
 
 /* Brand theme colors */
 .brand {
-  --primary: #b0e8cd;
-  --accent: #066333;
-  --secondary: #b0c9a8;
-  --tertiary: #434f30;
+  --primary: #c8bbff;
+  --accent: #caff42;
+  --secondary: #034f67;
+  --tertiary: #9289bb;
   --quaternary: #64cb7c;
   --positive: #21ba45;
   --negative: #c10015;

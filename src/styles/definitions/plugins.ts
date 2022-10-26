@@ -5,6 +5,6 @@ export const plugins = {
   light: apply('bg-primary'),
   dark: css(
     apply('bg-primary'),
-    // { 'color-scheme': 'dark' },
+    { 'color-scheme': 'dark' },
   ),
 };

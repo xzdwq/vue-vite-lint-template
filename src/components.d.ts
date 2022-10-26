@@ -10,6 +10,7 @@ declare module '@vue/runtime-core' {
     DemoXzdwqTpl: typeof import('./components/demo-xzdwq-tpl.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ThemeToggle: typeof import('./components/theme-toggle.vue')['default']
     TopBar: typeof import('./components/top-bar.vue')['default']
   }
 }
