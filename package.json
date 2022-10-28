@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
+    "prod": "vue-tsc --noEmit && vite build && vite preview",
     "lint-check": "eslint \"./**/*.{js,ts,vue}\"",
     "lint-fix": "eslint \"./**/*.{js,ts,vue}\" --fix",
     "prettier-check": "npx prettier --check .",

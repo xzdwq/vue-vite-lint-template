@@ -7,7 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    DemoXzdwqTpl: typeof import('./components/demo-xzdwq-tpl.vue')['default']
+    DemoCmp: typeof import('./components/demo-cmp.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ThemeToggle: typeof import('./components/theme-toggle.vue')['default']

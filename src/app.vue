@@ -1,6 +1,6 @@
 <template>
   <div>
     <top-bar class="p-1" />
-    <demo-xzdwq-tpl />
+    <demo-cmp />
   </div>
 </template>

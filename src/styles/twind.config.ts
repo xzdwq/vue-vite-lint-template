@@ -1,13 +1,10 @@
-import '~/assets/fonts/benzin/stylesheet.css';
-import '~/assets/fonts/montserrat/stylesheet.css';
-import '~/assets/fonts/segoe-ui/stylesheet.css';
-import '~/assets/icons/material/stylesheet.css';
+import '~/styles/fonts/index.scss';
 
-import { animate, colors, fontFamily } from '~/styles/definitions/theme';
+import { animate, colors, fontFamily } from '~/styles/twind/theme';
 import { apply, setup, silent, strict } from 'twind/shim';
-import { body, button, html, i } from '~/styles/definitions/tags';
+import { body, button, html, i } from '~/styles/twind/tags';
 
-import { plugins } from '~/styles/definitions/plugins';
+import { plugins } from '~/styles/twind/plugins';
 
 /** @type {import('twind').Configuration} */
 setup({

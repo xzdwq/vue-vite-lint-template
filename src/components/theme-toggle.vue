@@ -11,10 +11,8 @@
   </q-btn-dropdown>
 </template>
 
-<script setup lang="ts">
-import { IThemeList } from '~/types/theme';
-
-const mode = useColorMode<string>({
+<script setup>
+const mode = useColorMode({
   emitAuto: true,
   storageKey: 'theme',
   modes: {
@@ -22,7 +20,7 @@ const mode = useColorMode<string>({
   },
 });
 
-const themeList: IThemeList[] = [
+const themeList = [
   {
     className: EThemeScheme.AUTO,
     label: 'Auto',
@@ -46,9 +44,9 @@ const themeList: IThemeList[] = [
 ];
 
 const { next } = useCycleList(
-  themeList.map((i: IThemeList) => i.className),
+  themeList.map((i) => i.className),
   { initialValue: mode },
 );
 
-const icon = computed<string>(() => themeList.find((i) => i.className === mode.value)?.icon ?? 'auto_fix_hight');
+const icon = computed(() => themeList.find((i) => i.className === mode.value)?.icon ?? 'auto_fix_hight');
 </script>

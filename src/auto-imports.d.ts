@@ -3,12 +3,12 @@ export {}
 declare global {
   const EThemeScheme: typeof import('./types/theme')['EThemeScheme']
   const EffectScope: typeof import('vue')['EffectScope']
-  const animate: typeof import('./styles/definitions/theme')['animate']
+  const animate: typeof import('./styles/twind/theme')['animate']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
   const autoResetRef: typeof import('@vueuse/core')['autoResetRef']
-  const body: typeof import('./styles/definitions/tags')['body']
-  const button: typeof import('./styles/definitions/tags')['button']
-  const colors: typeof import('./styles/definitions/theme')['colors']
+  const body: typeof import('./styles/twind/tags')['body']
+  const button: typeof import('./styles/twind/tags')['button']
+  const colors: typeof import('./styles/twind/theme')['colors']
   const computed: typeof import('vue')['computed']
   const computedAsync: typeof import('@vueuse/core')['computedAsync']
   const computedEager: typeof import('@vueuse/core')['computedEager']
@@ -31,12 +31,12 @@ declare global {
   const eagerComputed: typeof import('@vueuse/core')['eagerComputed']
   const effectScope: typeof import('vue')['effectScope']
   const extendRef: typeof import('@vueuse/core')['extendRef']
-  const fontFamily: typeof import('./styles/definitions/theme')['fontFamily']
+  const fontFamily: typeof import('./styles/twind/theme')['fontFamily']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
   const h: typeof import('vue')['h']
-  const html: typeof import('./styles/definitions/tags')['html']
-  const i: typeof import('./styles/definitions/tags')['i']
+  const html: typeof import('./styles/twind/tags')['html']
+  const i: typeof import('./styles/twind/tags')['i']
   const ignorableWatch: typeof import('@vueuse/core')['ignorableWatch']
   const inject: typeof import('vue')['inject']
   const isDefined: typeof import('@vueuse/core')['isDefined']
@@ -65,7 +65,7 @@ declare global {
   const onUnmounted: typeof import('vue')['onUnmounted']
   const onUpdated: typeof import('vue')['onUpdated']
   const pausableWatch: typeof import('@vueuse/core')['pausableWatch']
-  const plugins: typeof import('./styles/definitions/plugins')['plugins']
+  const plugins: typeof import('./styles/twind/plugins')['plugins']
   const provide: typeof import('vue')['provide']
   const reactify: typeof import('@vueuse/core')['reactify']
   const reactifyObject: typeof import('@vueuse/core')['reactifyObject']
@@ -277,12 +277,12 @@ declare module '@vue/runtime-core' {
   interface ComponentCustomProperties {
     readonly EThemeScheme: UnwrapRef<typeof import('./types/theme')['EThemeScheme']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly animate: UnwrapRef<typeof import('./styles/definitions/theme')['animate']>
+    readonly animate: UnwrapRef<typeof import('./styles/twind/theme')['animate']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
     readonly autoResetRef: UnwrapRef<typeof import('@vueuse/core')['autoResetRef']>
-    readonly body: UnwrapRef<typeof import('./styles/definitions/tags')['body']>
-    readonly button: UnwrapRef<typeof import('./styles/definitions/tags')['button']>
-    readonly colors: UnwrapRef<typeof import('./styles/definitions/theme')['colors']>
+    readonly body: UnwrapRef<typeof import('./styles/twind/tags')['body']>
+    readonly button: UnwrapRef<typeof import('./styles/twind/tags')['button']>
+    readonly colors: UnwrapRef<typeof import('./styles/twind/theme')['colors']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
     readonly computedAsync: UnwrapRef<typeof import('@vueuse/core')['computedAsync']>
     readonly computedEager: UnwrapRef<typeof import('@vueuse/core')['computedEager']>
@@ -305,12 +305,12 @@ declare module '@vue/runtime-core' {
     readonly eagerComputed: UnwrapRef<typeof import('@vueuse/core')['eagerComputed']>
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
-    readonly fontFamily: UnwrapRef<typeof import('./styles/definitions/theme')['fontFamily']>
+    readonly fontFamily: UnwrapRef<typeof import('./styles/twind/theme')['fontFamily']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
-    readonly html: UnwrapRef<typeof import('./styles/definitions/tags')['html']>
-    readonly i: UnwrapRef<typeof import('./styles/definitions/tags')['i']>
+    readonly html: UnwrapRef<typeof import('./styles/twind/tags')['html']>
+    readonly i: UnwrapRef<typeof import('./styles/twind/tags')['i']>
     readonly ignorableWatch: UnwrapRef<typeof import('@vueuse/core')['ignorableWatch']>
     readonly inject: UnwrapRef<typeof import('vue')['inject']>
     readonly isDefined: UnwrapRef<typeof import('@vueuse/core')['isDefined']>
@@ -339,7 +339,7 @@ declare module '@vue/runtime-core' {
     readonly onUnmounted: UnwrapRef<typeof import('vue')['onUnmounted']>
     readonly onUpdated: UnwrapRef<typeof import('vue')['onUpdated']>
     readonly pausableWatch: UnwrapRef<typeof import('@vueuse/core')['pausableWatch']>
-    readonly plugins: UnwrapRef<typeof import('./styles/definitions/plugins')['plugins']>
+    readonly plugins: UnwrapRef<typeof import('./styles/twind/plugins')['plugins']>
     readonly provide: UnwrapRef<typeof import('vue')['provide']>
     readonly reactify: UnwrapRef<typeof import('@vueuse/core')['reactify']>
     readonly reactifyObject: UnwrapRef<typeof import('@vueuse/core')['reactifyObject']>

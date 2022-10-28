@@ -1,10 +1,11 @@
-import { tw } from 'twind';
-import { createApp } from 'vue';
-import App from '~/app.vue';
+import '~/styles/quasar/index.scss';
+import '~/styles/twind.config';
 
 import * as QuasarInstance from 'quasar';
-import '~/styles/quasar/main.scss';
-import '~/styles/twind.config';
+
+import App from '~/app.vue';
+import { createApp } from 'vue';
+import { tw } from 'twind';
 
 const app = createApp(App);
 

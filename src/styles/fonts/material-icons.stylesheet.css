@@ -2,7 +2,7 @@
   font-weight: 400;
   font-family: 'Material Icons';
   font-style: normal;
-  src: url('./material-icons.woff2') format('woff2');
+  src: url('~/assets/icons/material/material-icons.woff2') format('woff2');
   font-display: block;
 }
 
@@ -10,6 +10,6 @@
   font-weight: 400;
   font-family: 'Material Icons Outline';
   font-style: normal;
-  src: url('./material-icons-outline.woff2') format('woff2');
+  src: url('~/assets/icons/material/material-icons-outline.woff2') format('woff2');
   font-display: block;
 }

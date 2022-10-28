@@ -42,4 +42,28 @@ export default defineConfig({
       vueTemplate: true,
     }),
   ],
+  build: {
+    rollupOptions: {
+      input: {
+        index: path.resolve(__dirname, 'index.html'),
+      },
+      output: {
+        entryFileNames: `[name].[hash].entry.js`,
+        chunkFileNames: `[name].[hash].js`,
+        assetFileNames: ({ name }) => {
+          let extPath = "[ext]";
+          if (/\.(gif|jpe?g|png|svg|tiff|bmp|ico)$/.test(name ?? '')) {
+            extPath = 'images';
+          }
+          if (/\.css$/.test(name ?? '')) {
+            extPath = 'css';
+          }
+          if (/\.(woff2?|ttf|eot|otf)$/.test(name ?? '')) {
+            extPath = 'fonts';
+          }
+          return `assets/${extPath}/[name].[hash][extname]`;
+        },
+      },
+    },
+  },
 });
