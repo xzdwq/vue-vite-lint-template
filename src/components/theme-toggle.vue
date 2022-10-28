@@ -11,42 +11,55 @@
   </q-btn-dropdown>
 </template>
 
-<script setup>
-const mode = useColorMode({
-  emitAuto: true,
-  storageKey: 'theme',
-  modes: {
-    brand: 'brand',
-  },
-});
+<script lang="ts">
+import { IThemeList } from '~/types/theme';
 
-const themeList = [
-  {
-    className: EThemeScheme.AUTO,
-    label: 'Auto',
-    icon: 'brightness_4',
-  },
-  {
-    className: EThemeScheme.LIGHT,
-    label: 'Light',
-    icon: 'wb_sunny',
-  },
-  {
-    className: EThemeScheme.DARK,
-    label: 'Dark',
-    icon: 'mode_night',
-  },
-  {
-    className: EThemeScheme.BRAND,
-    label: 'Brand',
-    icon: 'cruelty_free',
-  },
-];
+export default {
+  setup() {
+    const mode = useColorMode<string>({
+      emitAuto: true,
+      storageKey: 'theme',
+      modes: {
+        brand: 'brand',
+      },
+    });
 
-const { next } = useCycleList(
-  themeList.map((i) => i.className),
-  { initialValue: mode },
-);
+    const themeList: IThemeList[] = [
+      {
+        className: EThemeScheme.AUTO,
+        label: 'Auto',
+        icon: 'brightness_4',
+      },
+      {
+        className: EThemeScheme.LIGHT,
+        label: 'Light',
+        icon: 'wb_sunny',
+      },
+      {
+        className: EThemeScheme.DARK,
+        label: 'Dark',
+        icon: 'mode_night',
+      },
+      {
+        className: EThemeScheme.BRAND,
+        label: 'Brand',
+        icon: 'cruelty_free',
+      },
+    ];
 
-const icon = computed(() => themeList.find((i) => i.className === mode.value)?.icon ?? 'auto_fix_hight');
+    const { next } = useCycleList(
+      themeList.map((i: IThemeList) => i.className),
+      { initialValue: mode },
+    );
+
+    const icon = computed<string>(() => themeList.find((i) => i.className === mode.value)?.icon ?? 'auto_fix_hight');
+
+    return {
+      mode,
+      themeList,
+      next,
+      icon,
+    }
+  },
+}
 </script>
