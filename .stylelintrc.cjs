@@ -41,7 +41,7 @@ module.exports = {
     {
       files: ['*.vue', '**/*.vue'],
       rules: {
-        'unit-allowed-list': ['em', 'rem', 's'],
+        'unit-allowed-list': ['px', 'em', 'rem', 's'],
       },
     },
   ],

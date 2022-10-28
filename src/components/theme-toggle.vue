@@ -1,7 +1,15 @@
 <template>
   <q-btn-dropdown stretch flat split :icon="icon" class="min" @click="next()">
     <q-list class="min">
-      <q-item v-for="item in themeList" :key="item.className" v-close-popup clickable @click="mode = item.className">
+      <q-item
+        v-for="item in themeList"
+        :key="item.className"
+        v-close-popup
+        :active="mode === item.className"
+        active-class="bg-quaternary"
+        clickable
+        @click="mode = item.className"
+      >
         <q-item-section avatar>
           <q-avatar :icon="item.icon" />
         </q-item-section>
@@ -59,7 +67,7 @@ export default {
       themeList,
       next,
       icon,
-    }
+    };
   },
-}
+};
 </script>

@@ -3,6 +3,7 @@ import { quasar, transformAssetUrls } from '@quasar/vite-plugin';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
+import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import { defineConfig } from 'vite';
 import path from 'node:path';
 import vue from '@vitejs/plugin-vue';
@@ -41,6 +42,11 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()],
       vueTemplate: true,
     }),
+    VueI18n({
+      runtimeOnly: true,
+      compositionOnly: true,
+      include: [path.resolve(__dirname, 'locales/**')],
+    }),
   ],
   build: {
     rollupOptions: {
@@ -51,7 +57,7 @@ export default defineConfig({
         entryFileNames: `[name].[hash].entry.js`,
         chunkFileNames: `[name].[hash].js`,
         assetFileNames: ({ name }) => {
-          let extPath = "[ext]";
+          let extPath = '[ext]';
           if (/\.(gif|jpe?g|png|svg|tiff|bmp|ico)$/.test(name ?? '')) {
             extPath = 'images';
           }

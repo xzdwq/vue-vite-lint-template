@@ -36,6 +36,7 @@ declare global {
   const getCurrentScope: typeof import('vue')['getCurrentScope']
   const h: typeof import('vue')['h']
   const html: typeof import('./styles/twind/tags')['html']
+  const i18n: typeof import('./modules/i18n')['i18n']
   const i: typeof import('./styles/twind/tags')['i']
   const ignorableWatch: typeof import('@vueuse/core')['ignorableWatch']
   const inject: typeof import('vue')['inject']
@@ -311,6 +312,7 @@ declare module '@vue/runtime-core' {
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly html: UnwrapRef<typeof import('./styles/twind/tags')['html']>
+    readonly i18n: UnwrapRef<typeof import('./modules/i18n')['i18n']>
     readonly i: UnwrapRef<typeof import('./styles/twind/tags')['i']>
     readonly ignorableWatch: UnwrapRef<typeof import('@vueuse/core')['ignorableWatch']>
     readonly inject: UnwrapRef<typeof import('vue')['inject']>
