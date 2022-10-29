@@ -39,12 +39,15 @@ Docker использует nginx, поэтому если необходимо 
 
 ### Добавить новый язык перевода
 
-1. В `src\lang\translation\` создать файл с именем формата ISO language code;
+1. В `src\lang\translation\` создать `.yml` файл с именем формата ISO language code (например `ru.yml`);
 2. Сделать перевод в этом файле по аналогичным ключам из ранее добавленных языков;
 3. В `src\lang\available-languages.yml` зарегистрировать формат и наименование языка;
-4. В папку `src\assets\img\flags\` поместить флаг страны где зарегистрирован язык в формате `<isoName>.png`;
-5. Скопировать файл из `node_modules/quasar/lang/<isoName>.mjs` в папку `src\lang\quasar\`; 5.1. Копирование из Quasar
-   модуля в папку проекта необходимо для уменьшения бандла проложения после билда. Если не хочется выполнять 5-й пункт,
-   то необходимо в файле `src\components\lang-toggle.vue` в методе `setLangQuasar` в динамическом импорте языковых
-   пакетов Quasar заменить с `await import('../lang/quasar/${state.value}.mjs');` на
-   `await import('../../node_modules/quasar/lang/${state.value}.mjs');`;
+4. В папку `src\assets\img\flags\` поместить `.png` изображение флага страны где зарегистрирован язык с именем как и
+   ранее добавленный `.yml` файл (например `ru.png`);
+5. Скопировать файл `.mjs` с аналогичным именем (например `ru.mjs`) из `node_modules\quasar\lang\` в папку
+   `src\lang\quasar\`;
+
+Копирование из Quasar модуля в папку проекта необходимо для уменьшения бандла проложения после билда. Если не хочется
+выполнять 5-й пункт, то необходимо в файле `src\components\lang-toggle.vue` в методе `setLangQuasar` в динамическом
+импорте языковых пакетов Quasar заменить с `await import('../lang/quasar/${state.value}.mjs');` на
+`await import('../../node_modules/quasar/lang/${state.value}.mjs');`;
