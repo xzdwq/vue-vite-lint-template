@@ -1,6 +1,6 @@
 <template>
   <q-btn-dropdown stretch flat split :icon="icon" class="min" @click="next()">
-    <q-list class="min">
+    <q-list class="min" bordered separator>
       <q-item
         v-for="item in themeList"
         :key="item.className"
@@ -23,7 +23,7 @@
 import { IThemeList } from '~/types/theme';
 
 export default {
-  setup() {
+  setup () {
     const mode = useColorMode<string>({
       emitAuto: true,
       storageKey: 'theme',

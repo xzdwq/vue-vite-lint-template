@@ -67,7 +67,7 @@ module.exports = {
         baseIndent: 0,
       },
     ],
-    'space-before-function-paren': ['error', 'never'],
+    'space-before-function-paren': ['error', 'always'],
     '@typescript-eslint/naming-convention': [
       'error',
       {

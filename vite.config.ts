@@ -7,6 +7,7 @@ import VueI18n from '@intlify/vite-plugin-vue-i18n';
 import { defineConfig } from 'vite';
 import path from 'node:path';
 import vue from '@vitejs/plugin-vue';
+import yaml from '@rollup/plugin-yaml';
 
 export default defineConfig({
   server: {
@@ -47,6 +48,11 @@ export default defineConfig({
       compositionOnly: true,
       include: [path.resolve(__dirname, 'locales/**')],
     }),
+    yaml({
+      transform (data) {
+        return data === null ? {} : undefined;
+      },
+    }),
   ],
   build: {
     rollupOptions: {
@@ -54,8 +60,8 @@ export default defineConfig({
         index: path.resolve(__dirname, 'index.html'),
       },
       output: {
-        entryFileNames: `[name].[hash].entry.js`,
-        chunkFileNames: `[name].[hash].js`,
+        entryFileNames: '[name].[hash].entry.js',
+        chunkFileNames: '[name].[hash].js',
         assetFileNames: ({ name }) => {
           let extPath = '[ext]';
           if (/\.(gif|jpe?g|png|svg|tiff|bmp|ico)$/.test(name ?? '')) {

@@ -5,7 +5,7 @@ import * as QuasarInstance from 'quasar';
 
 import App from '~/app.vue';
 import { createApp } from 'vue';
-import { i18n } from '~/modules/i18n';
+import { i18n } from '~/lang/i18n';
 import { tw } from 'twind';
 
 const app = createApp(App);
