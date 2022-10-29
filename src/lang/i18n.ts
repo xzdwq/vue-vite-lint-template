@@ -11,6 +11,7 @@ export const i18n = createI18n({
   messages: {
     'en-US': enUS,
   },
+  globalInjection: true,
   silentTranslationWarn: true,
   silentFallbackWarn: true,
   dateTimeFormats,

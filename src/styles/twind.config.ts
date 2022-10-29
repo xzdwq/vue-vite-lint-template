@@ -26,7 +26,7 @@ setup({
     body,
     button,
     i,
-    '[id=app]': apply('h-full bg-secondary'),
+    '[id=app]': apply('bg-secondary'),
   }),
   plugins,
 });

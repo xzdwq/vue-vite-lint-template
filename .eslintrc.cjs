@@ -67,7 +67,7 @@ module.exports = {
         baseIndent: 0,
       },
     ],
-    'space-before-function-paren': ['error', 'always'],
+    'space-before-function-paren': ['error', 'never'],
     '@typescript-eslint/naming-convention': [
       'error',
       {
@@ -143,7 +143,6 @@ module.exports = {
         '@typescript-eslint/explicit-function-return-type': ['error'],
       },
     },
-
     {
       files: ['**/*.js'],
       rules: {

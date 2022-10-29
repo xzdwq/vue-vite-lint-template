@@ -37,7 +37,7 @@ export default defineConfig({
       dts: 'src/components.d.ts',
     }),
     AutoImport({
-      imports: ['vue', 'vue-router', 'vue-i18n', '@vueuse/core'],
+      imports: ['vue', 'vue-router', 'vue-i18n', '@vueuse/core', 'quasar'],
       dts: 'src/auto-imports.d.ts',
       dirs: ['src/**/*'],
       resolvers: [ElementPlusResolver()],
@@ -49,7 +49,7 @@ export default defineConfig({
       include: [path.resolve(__dirname, 'locales/**')],
     }),
     yaml({
-      transform (data) {
+      transform(data) {
         return data === null ? {} : undefined;
       },
     }),

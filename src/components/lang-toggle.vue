@@ -1,7 +1,7 @@
 <template>
-  <q-btn-dropdown stretch flat split class="min" @click="toggleLocales()">
+  <q-btn-dropdown stretch outline flat split class="min no-shadow" @click="toggleLocales()">
     <template #label>
-      <div class="row items-center no-wrap">
+      <div class="row items-center no-wrap px-1">
         <q-img :src="currentLangFlag" spinner-color="white" style="height: 15px; width: 20px" />
       </div>
     </template>
@@ -30,13 +30,15 @@ import { ILocalesList } from '~/types/locales';
 import availableLanguages from '~/lang/available-languages.yml';
 
 export default {
-  setup () {
+  setup() {
     const { locale } = useI18n();
+    const $q = useQuasar();
 
     const storageLocale = useStorage('locale', locale);
     const availableLocales = Object.entries(availableLanguages).map(([key]) => key);
 
-    const getFlagPath = (langCode: string): string => new URL(`../assets/img/${langCode}.png`, import.meta.url).href;
+    const getFlagPath = (langCode: string): string =>
+      new URL(`../assets/img/flags/${langCode}.png`, import.meta.url).href;
 
     const localesList: ILocalesList[] = availableLocales.map((item: string) => {
       return {
@@ -49,18 +51,31 @@ export default {
     const { next, state } = useCycleList(availableLocales);
     state.value = storageLocale.value;
 
-    onMounted(async () => {
+    const setLangQuasar = async(): Promise<void> => {
+      try {
+        const { default: qLangs } = await import(`../lang/quasar/${state.value}.mjs`);
+        $q.lang.set(qLangs);
+      } catch (err: unknown) {
+        console.warn(`Quasar set language "${state.value}": `, err);
+      }
+    };
+
+    onMounted(async() => {
       await setLanguage(state.value);
+      await setLangQuasar();
     });
 
-    const toggleLocales = async (item: ILocalesList | null = null): Promise<void> => {
+    const toggleLocales = async(item: ILocalesList | null = null): Promise<void> => {
       next();
       if (item) state.value = item.code;
       locale.value = state.value;
       await setLanguage(state.value);
+      await setLangQuasar();
     };
 
-    const currentLangFlag = computed<string>(() => localesList.find((i) => i.code === state.value)?.img ?? '');
+    const currentLangFlag = computed<string>(
+      () => localesList.find((i) => i.code === state.value)?.img ?? getFlagPath('unknown'),
+    );
 
     return {
       localesList,
