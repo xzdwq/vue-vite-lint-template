@@ -39,8 +39,6 @@ Docker использует nginx, поэтому если необходимо 
 
 ### Добавить новый язык перевода
 
-const { default: qLangs } = await import(`../../node_modules/quasar/lang/${state.value}.mjs`);
-
 1. В `src\lang\translation\` создать файл с именем формата ISO language code;
 2. Сделать перевод в этом файле по аналогичным ключам из ранее добавленных языков;
 3. В `src\lang\available-languages.yml` зарегистрировать формат и наименование языка;
