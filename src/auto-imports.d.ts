@@ -30,9 +30,9 @@ declare global {
   const defineComponent: typeof import('vue')['defineComponent']
   const eagerComputed: typeof import('@vueuse/core')['eagerComputed']
   const effectScope: typeof import('vue')['effectScope']
-  const enUS: typeof import('./lang/lang/en-US.mjs')['default']
+  const enUS: typeof import('./lang/quasar/en-US.mjs')['default']
   const extendRef: typeof import('@vueuse/core')['extendRef']
-  const fi: typeof import('./lang/lang/fi.mjs')['default']
+  const fi: typeof import('./lang/quasar/fi.mjs')['default']
   const fontFamily: typeof import('./styles/twind/theme')['fontFamily']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
@@ -90,7 +90,7 @@ declare global {
   const resolveDirective: typeof import('vue')['resolveDirective']
   const resolveRef: typeof import('@vueuse/core')['resolveRef']
   const resolveUnref: typeof import('@vueuse/core')['resolveUnref']
-  const ru: typeof import('./lang/lang/ru.mjs')['default']
+  const ru: typeof import('./lang/quasar/ru.mjs')['default']
   const setLanguage: typeof import('./lang/set-language')['setLanguage']
   const shallowReactive: typeof import('vue')['shallowReactive']
   const shallowReadonly: typeof import('vue')['shallowReadonly']
@@ -320,9 +320,9 @@ declare module 'vue' {
     readonly defineComponent: UnwrapRef<typeof import('vue')['defineComponent']>
     readonly eagerComputed: UnwrapRef<typeof import('@vueuse/core')['eagerComputed']>
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
-    readonly enUS: UnwrapRef<typeof import('./lang/lang/en-US.mjs')['default']>
+    readonly enUS: UnwrapRef<typeof import('./lang/quasar/en-US.mjs')['default']>
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
-    readonly fi: UnwrapRef<typeof import('./lang/lang/fi.mjs')['default']>
+    readonly fi: UnwrapRef<typeof import('./lang/quasar/fi.mjs')['default']>
     readonly fontFamily: UnwrapRef<typeof import('./styles/twind/theme')['fontFamily']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
@@ -380,7 +380,7 @@ declare module 'vue' {
     readonly resolveDirective: UnwrapRef<typeof import('vue')['resolveDirective']>
     readonly resolveRef: UnwrapRef<typeof import('@vueuse/core')['resolveRef']>
     readonly resolveUnref: UnwrapRef<typeof import('@vueuse/core')['resolveUnref']>
-    readonly ru: UnwrapRef<typeof import('./lang/lang/ru.mjs')['default']>
+    readonly ru: UnwrapRef<typeof import('./lang/quasar/ru.mjs')['default']>
     readonly setLanguage: UnwrapRef<typeof import('./lang/set-language')['setLanguage']>
     readonly shallowReactive: UnwrapRef<typeof import('vue')['shallowReactive']>
     readonly shallowReadonly: UnwrapRef<typeof import('vue')['shallowReadonly']>

@@ -1,1 +1,6 @@
 welcome: Tervetuloa!
+theme:
+  auto: Auto (kuten käyttöjärjestelmä)
+  light: Valoisa
+  dark: Pimeä
+  brand: Merkkisten

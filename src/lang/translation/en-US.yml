@@ -1,1 +1,6 @@
 welcome: Welcome!
+theme:
+  auto: Auto (as in the OS)
+  light: Light
+  dark: Dark
+  brand: Branded
