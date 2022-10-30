@@ -7,8 +7,10 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    DemoCmp: typeof import('./components/demo-cmp.vue')['default']
+    DemoCmp: typeof import('./components/demo/demo-cmp.vue')['default']
     LangToggle: typeof import('./components/lang-toggle.vue')['default']
+    ListItem: typeof import('./components/demo/list-item.vue')['default']
+    ListItemError: typeof import('./components/demo/list-item-error.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ThemeToggle: typeof import('./components/theme-toggle.vue')['default']

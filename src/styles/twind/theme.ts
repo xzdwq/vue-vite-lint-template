@@ -25,6 +25,10 @@ export const colors = {
   secondary: 'var(--secondary)',
   tertiary: 'var(--tertiary)',
   quaternary: 'var(--quaternary)',
+  positive: 'var(--positive)',
+  negative: 'var(--negative)',
+  info: 'var(--info)',
+  warning:'var(--warning)',
 };
 
 /**

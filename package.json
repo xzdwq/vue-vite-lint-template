@@ -21,6 +21,7 @@
     "@vueuse/core": "^9.4.0",
     "quasar": "^2.10.0",
     "vue": "^3.2.41",
+    "vue-error-boundary": "^2.0.1",
     "vue-i18n": "^9.2.2",
     "vue-router": "4.1.6"
   },
