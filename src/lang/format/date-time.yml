@@ -12,7 +12,7 @@ en-US:
     minute: numeric
     hour12: true
 
-cs-CZ:
+ru:
   short:
     year: numeric
     month: short
@@ -26,7 +26,7 @@ cs-CZ:
     minute: numeric
     hour12: false
 
-de-DE:
+fi:
   short:
     year: numeric
     month: short
@@ -40,7 +40,7 @@ de-DE:
     minute: numeric
     hour12: false
 
-fr-FR:
+cs:
   short:
     year: numeric
     month: short
@@ -54,7 +54,7 @@ fr-FR:
     minute: numeric
     hour12: false
 
-it-IT:
+de:
   short:
     year: numeric
     month: short
@@ -68,7 +68,7 @@ it-IT:
     minute: numeric
     hour12: false
 
-nl-NL:
+fr:
   short:
     year: numeric
     month: short
@@ -82,7 +82,21 @@ nl-NL:
     minute: numeric
     hour12: false
 
-ru-RU:
+it:
+  short:
+    year: numeric
+    month: short
+    day: numeric
+  long:
+    year: numeric
+    month: short
+    day: numeric
+    weekday: short
+    hour: numeric
+    minute: numeric
+    hour12: false
+
+nl:
   short:
     year: numeric
     month: short

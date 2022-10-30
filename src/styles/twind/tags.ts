@@ -4,12 +4,12 @@ import { css } from 'twind/css';
 /**
  * HTML
  */
-export const html = apply('h-full w-full font-base');
+export const html = apply('h-full w-full');
 
 /**
  * Body
  */
-export const body = apply('m-0 relative h-full');
+export const body = apply('m-0 relative h-full font-base');
 
 /**
  * Button

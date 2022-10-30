@@ -3,6 +3,7 @@ en-US:
     style: 'currency'
     currency: 'USD'
     notation: standard
+    currencyDisplay: 'symbol'
   decimal:
     style: 'decimal'
     minimumFractionDigits: 2
@@ -10,3 +11,17 @@ en-US:
   percent:
     style: 'percent'
     useGrouping: false
+
+ru:
+  currency:
+    style: 'currency'
+    currency: 'RUB'
+    notation: standard
+    currencyDisplay: 'symbol'
+
+fi:
+  currency:
+    style: 'currency'
+    currency: 'EUR'
+    notation: standard
+    currencyDisplay: 'symbol'

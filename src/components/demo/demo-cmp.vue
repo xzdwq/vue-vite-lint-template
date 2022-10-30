@@ -1,7 +1,8 @@
 <template>
   <div>
-    <div class="flex justify-center items-center pt-4 font(base semibold) text(lg tertiary)">Vue 3 Vite TS Twind</div>
-    <div class="flex justify-center items-center pt-4 font(base semibold) text(lg tertiary)">
+    <div class="flex justify-center items-center pt-4 font-semibold text(lg tertiary)">Vue 3 Vite TS Twind</div>
+    <div class="flex justify-center items-center pt-4">{{ d(new Date(), 'long') }} - {{ n(100, 'currency') }}</div>
+    <div class="flex justify-center items-center pt-4 font-semibold text(lg tertiary)">
       <q-btn color="primary" text-color="tertiary" label="Add data" icon="add" />
       <i data-icon="settings" />
       <i data-icon="settings" class="filled" />
@@ -28,6 +29,7 @@
 
 <script setup lang="ts">
 import ErrorBoundary from 'vue-error-boundary';
+const { d, n } = useI18n();
 
 const date = ref<string>('2019/02/01');
 
