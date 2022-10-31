@@ -1,0 +1,8 @@
+welcome: 欢迎
+render-cmp: 组件渲染
+render-fail: 组件渲染错误
+theme:
+  auto: 自动 (如操作系统)
+  light: 明亮
+  dark: 黑暗
+  brand: 品牌化

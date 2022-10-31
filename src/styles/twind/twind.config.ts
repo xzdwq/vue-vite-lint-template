@@ -17,6 +17,7 @@ setup({
       animation: animate.animation,
       keyframes: animate.keyframes,
       outline: (theme) => ({
+        // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
         btn: [`2px solid ${theme('colors.quaternary')}`, '2px'],
       }),
     },

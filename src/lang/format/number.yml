@@ -25,3 +25,10 @@ fi:
     currency: 'EUR'
     notation: standard
     currencyDisplay: 'symbol'
+
+zh-CN:
+  currency:
+    style: 'currency'
+    currency: 'CNY'
+    notation: standard
+    currencyDisplay: 'symbol'

@@ -1,4 +1,6 @@
 welcome: Tervetuloa!
+render-cmp: Komponenttirenderöinti
+render-fail: Komponentin renderointivirhe
 theme:
   auto: Auto (kuten käyttöjärjestelmä)
   light: Valoisa

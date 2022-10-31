@@ -1,5 +1,5 @@
 import '~/styles/quasar/index.scss';
-import '~/styles/twind.config';
+import '~/styles/twind/twind.config';
 
 import * as QuasarInstance from 'quasar';
 

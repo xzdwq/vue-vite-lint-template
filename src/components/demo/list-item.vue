@@ -2,7 +2,7 @@
   <div
     class="rounded-lg border(2 solid tertiary) text(tertiary [25px] hover:(lime-500 dark:rose-200)) duration-300 cursor-pointer p-2"
   >
-    <div>Component render successfully: {{ isRenderSuccessfully(name) }}</div>
+    <div>{{ t('render-cmp') }}: {{ isRenderSuccessfully(name) }}</div>
     <div :class="`font(${fontName} light)`">{{ name }} light: {{ t('welcome') }}</div>
     <div :class="`font-${fontName}`">{{ name }}: {{ t('welcome') }}</div>
     <div :class="`font-${fontName} italic`">{{ name }} italic: {{ t('welcome') }}</div>

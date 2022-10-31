@@ -1,4 +1,6 @@
 welcome: Welcome!
+render-cmp: Component rendering
+render-fail: Component rendering error
 theme:
   auto: Auto (as in the OS)
   light: Light
