@@ -53,6 +53,9 @@ module.exports = {
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/no-unused-vars': 1,
     'vue/require-default-prop': 1,
+    'vue/no-unused-vars': ['warn', {
+      'ignorePattern': '^_',
+    }],
     'vue/html-indent': [
       2,
       2,
